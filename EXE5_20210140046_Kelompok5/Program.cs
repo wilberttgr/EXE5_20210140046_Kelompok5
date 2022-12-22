@@ -59,10 +59,32 @@ namespace EXE5_20210140046_Kelompok5
                 Console.WriteLine(display.name);
         }
     }
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            queue q = new queue();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Insert");
+                    Console.WriteLine("2. Delete");
+                    Console.WriteLine("3. Display");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice: ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            q.insert();
+                            break;
+                    }
+                }
         }
     }
 }
