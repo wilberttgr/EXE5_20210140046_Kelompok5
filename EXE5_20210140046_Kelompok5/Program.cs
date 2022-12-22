@@ -36,6 +36,17 @@ namespace EXE5_20210140046_Kelompok5
             tegar.next = newnode;
             tegar = newnode;
         }
+        public void delete()
+        {
+            if (wilbert == null)
+            {
+                Console.WriteLine("Queue is Empty!!");
+                return;
+            }
+            wilbert = wilbert.next;
+            if (wilbert == null)
+                tegar = null;
+        }
     }
     internal class Program
     {
