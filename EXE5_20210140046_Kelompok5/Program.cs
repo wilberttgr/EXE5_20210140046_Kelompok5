@@ -19,6 +19,23 @@ namespace EXE5_20210140046_Kelompok5
             wilbert = null;
             tegar = null;
         }
+        public void insert()
+        {
+            string nm;
+            Node newnode = new Node();
+            Console.WriteLine("Masukan Element: ");
+            nm = Console.ReadLine();
+            newnode.name = nm;
+            newnode.next = null;
+            if (wilbert == null)
+            {
+                wilbert = newnode;
+                tegar = newnode;
+                return;
+            }
+            tegar.next = newnode;
+            tegar = newnode;
+        }
     }
     internal class Program
     {
