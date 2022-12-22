@@ -86,7 +86,9 @@ namespace EXE5_20210140046_Kelompok5
                         case '2':
                             q.delete();
                             break;
-                        
+                        case '3':
+                            q.display();
+                            break;
 
                           
                     }
